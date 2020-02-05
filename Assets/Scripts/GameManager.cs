@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject playerPrefab;
+    public GameObject player;
     public static GameManager instance;
+    public int lives = 3;
     public int score = 0;
     public bool isPaused = false;
 
@@ -28,6 +32,11 @@ public class GameManager : MonoBehaviour
         {
             Application.Quit();
         }
+    }
+
+    public void Respawn()
+    {
+        Instantiate(playerPrefab);
     }
 
 }

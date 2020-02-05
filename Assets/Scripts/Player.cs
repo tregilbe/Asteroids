@@ -49,4 +49,19 @@ public class Player : MonoBehaviour
     {
         Debug.Log("The GameObject of the other object is named: " + otherObject.gameObject.name);
     }
+
+    void OnDestroy()
+    {
+        // If the player dies, they lose a life
+        GameManager.instance.lives -= 1;
+        if (GameManager.instance.lives > 0)
+        {
+            GameManager.instance.Respawn();
+        }
+        else
+        {
+            Debug.Log("Game Over");
+        }
+    }
+
 }
