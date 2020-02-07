@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
     void OnCollisionEnter2D(Collision2D otherObject)
     {
         Debug.Log("The GameObject of the other object is named: " + otherObject.gameObject.name);
+        Destroy(this.gameObject);
     }
 
     void OnDestroy()
