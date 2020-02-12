@@ -187,8 +187,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 692057318463136281, guid: 3bb95fda993778546be328fed075eaf5,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 514562731}
+    - target: {fileID: 1202731576622160337, guid: 3bb95fda993778546be328fed075eaf5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bb95fda993778546be328fed075eaf5, type: 3}
+--- !u!4 &514562731 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1202731576622160337, guid: 3bb95fda993778546be328fed075eaf5,
+    type: 3}
+  m_PrefabInstance: {fileID: 475761691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +326,17 @@ MonoBehaviour:
   score: 0
   isPaused: 0
   enemiesList: []
+  enemyPrefabs:
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 7642335145607529695, guid: f4e9a61fd40c909418e266e96df9a476, type: 3}
+  - {fileID: 6678383057368736748, guid: 183c028bb247cf144975002301be7ee6, type: 3}
 --- !u!4 &844419619
 Transform:
   m_ObjectHideFlags: 0

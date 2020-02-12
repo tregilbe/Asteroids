@@ -8,12 +8,13 @@ public class Asteroid : MonoBehaviour
     void Start()
     {
         GameManager.instance.enemiesList.Add(this.gameObject);
+        // Aim at the player at start
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // Always move forward
     }
 
     void OnDestroy()
@@ -23,7 +24,7 @@ public class Asteroid : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D otherObject)
     {
-        Debug.Log("The GameObject of the other object is named: " + otherObject.gameObject.name);
+        Debug.Log("[Collision Entered] The GameObject of the other object is named: " + otherObject.gameObject.name);
 
         if (otherObject.gameObject == GameManager.instance.player)
         {
