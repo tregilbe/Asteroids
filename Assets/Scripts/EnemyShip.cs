@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyShip : MonoBehaviour
 {
+    private Transform tf;
+    public float movementSpeed = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +17,9 @@ public class EnemyShip : MonoBehaviour
     void Update()
     {
         // Adjust rotation every update for heat seeking behaviour
-
+    
         // Always fly forward
-
+        tf.position += tf.right * movementSpeed * Time.deltaTime;
     }
 
     void OnDestroy()
@@ -28,10 +31,7 @@ public class EnemyShip : MonoBehaviour
     {
         Debug.Log("[Collision Entered] The GameObject of the other object is named: " + otherObject.gameObject.name);
 
-        if (otherObject.gameObject == GameManager.instance.player)
-        {
-            Destroy(otherObject.gameObject);
-            Destroy(this.gameObject);
-        }
+        Destroy(otherObject.gameObject);
+        Destroy(this.gameObject);
     }
 }

@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Transform tf;
+    public Transform tf;
 
     public float rotationSpeed = 1;
     public float movementSpeed = 1;
 
     public GameObject bulletPrefab;
     public Transform firePoint;
+
+    public Vector3 target;
 
     // Start is called before the first frame update
     void Start()
